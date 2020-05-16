@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+    {% block corecss %}
+        <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    {% endblock corecss %}
+    <title>school project</title>
+</head>
+<body>
+  {% include 'core/navbar.html' %} 
+
+  {% block contant %}
+  
+    {% endblock contant%}
+
+  <div class="container-fluid">
+    <hr class="bg-danger">
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <a href="{% url 'home' %}" class="text-cetner navbar-brand text-danger ml-5 mt-3">Kalam School</a>
+        </div>
+        <div class="col-sm-6 mt-2">
+        <h5 class="text-danger text-uppercase text-center">Join Kalam family. think education, thik kalam</h5>
+          <hr class="bg-danger">
+          <div class="form-row text-center">
+            <div class="col-sm-6">
+              <a href="#" title="Teach at SMSS school">
+              <i class="fas fa-chalkboard-teacher text-info fa-4x"></i>
+              <p class="font-weight-bold text-info">Become a teacher</p>
+              </a>
+              </div>
+              <div class="col-sm-6">
+              <a href="#" title="drive SMSS bus">
+              <i class="fas fa-bus-alt text-warning fa-4x"></i>
+              <p class="font-weight-bold text-warning">Become a Bus Driver</p>
+              </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color:#E9ECEF;">
+      <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-6 text-center"><!--col first-->
+          <a href="#" class='text-dark font-weight-bold border-right border-secondary mx-2' style="text-decoration: none";> About us &nbsp;&nbsp;</a>
+          <a href="#" class='text-dark font-weight-bold border-right border-secondary mx-2' style="text-decoration: none";> Privicey Policey &nbsp;&nbsp;</a>
+          <a href="#" class='text-dark font-weight-bold border-right border-secondary mx-2' style="text-decoration: none";> Desclimer  &nbsp;&nbsp;</a>
+        </div><!--coll end-->
+        <div class="col-sm-6">
+        <a href="{% url 'home' %}" class='text-dark font-weight-bold border-right border-secondary mx-2' style="text-decoration: none";><i class="fab fa-facebook fa-2x"></i> &nbsp;&nbsp;</a>
+          <a href="#" class='text-dark font-weight-bold border-right border-secondary mx-2' style="text-decoration: none;"> <i class="fab fa-twitter-square fa-2x"></i> &nbsp;&nbsp;</a>
+          <a href="#" class='text-dark font-weight-bold border-right border-secondary mx-2' style="text-decoration: none; font-size:16px;"> <i class="fab fa-linkedin fa-2x"></i>  &nbsp;&nbsp;</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<script src="{% static 'core/js/jquery.js' %}"></script>
+<script src="{% static 'core/js/popper.min.js' %}"></script>
+<script src="{% static 'core/js/all.min.js' %}"></script>
+<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

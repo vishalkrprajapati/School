@@ -1,0 +1,30 @@
+{% extends 'core/base.htm' %}
+
+{% block contant %}
+<nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+  <a href="#" class="navbar-brand">Kalam school</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-darget="#myLink"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="myLink">
+    <ul class="navbar-nav menu ml-auto">
+      <li class="nav-item"><a href=" {% url 'pre-primary' %}" class="nav-link text-uppercase ml-2">Pre-primary school </a></li>
+      <li class="nav-item"><a href="{% url 'primary' %}" class="nav-link text-uppercase">primary</a></li>
+      <li class="nav-item"><a href="{% url 'middile' %}" class="nav-link text-uppercase">middile </a></li>
+      <li class="nav-item"><a href="{% url 'heigher' %}" class="nav-link text-uppercase">high school</a></li>
+      <li class="nav-item"><a href="{% url 'heighersecondary' %}" class="nav-link text-uppercase">higher seconday</a></li>
+    </ul>
+  </div>
+</nav> 
+<div class="container text-center mt-4">
+  <i class="fas fa-book-open text-danger fa-10x"></i>
+  <p class="text-center font-weight-bold h5 text-uppercase" style="font-size: 28px;">heigher seconday school</p>
+</div>
+<div class="container-fluid jumbotron text-center">
+  <a href = "{% url 'admission' %}" class="btn btn-primary ">Get admission</a>
+ <div class="container">
+    <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aspernatur minima consectetur error temporibus dolor architecto similique nemo nam ipsum nesciunt consequatur exercitationem, ea consequuntur velit blanditiis mollitia voluptatum modi ut odit voluptates quo. Laudantium nam aperiam corporis quisquam, provident doloribus, minus rem ullam rerum ipsa vero? Laboriosam, porro at autem mollitia odio officiis nulla distinctio sit quam voluptate modi aliquid? Similique modi beatae, temporibus, reprehenderit eos necessitatibus voluptatem ipsum voluptate nesciunt numquam tenetur. Et aliquid perferendis aut incidunt libero ipsum, rerum, asperiores corporis, molestias commodi est labore nihil. Asperiores ducimus quia ipsa atque reiciendis sed reprehenderit quos ea saepe!</p>
+    <p class="text-justiy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ullam autem rerum nobis vel cupiditate dolore facilis harum, odit sequi dicta quod molestiae facere debitis placeat laudantium dolorum corrupti modi!</p>
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga sint unde amet deserunt quae similique, assumenda ipsa, quis dignissimos voluptates minus? Sequi blanditiis, quod magni dolore expedita possimus dolor doloremque voluptate rem! Impedit corrupti labore explicabo at aliquam corporis saepe magni quibusdam totam illo, veniam tempore in sint iusto modi? Ullam aperiam omnis cupiditate exercitationem repellat quaerat, voluptatem fugiat culpa dicta repellendus perferendis. At molestiae similique beatae accusantium voluptate numquam?</p>
+ </div>
+</div>
+  
+{% endblock contant%}

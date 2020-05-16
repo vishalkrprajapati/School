@@ -1,0 +1,97 @@
+{% extends 'core/base.htm' %}
+{% block contant %}
+<nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+  <a href="{% url 'home' %}" class="navbar-brand">Kalam school</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-darget="#myLink"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="myLink">
+    <ul class="navbar-nav ml-auto menu mx-5">
+      <li class="nav-item"><a href="{% url 'home' %}" class="nav-link text-uppercase">home</a></li>
+      <li class="nav-item"><a href="{% url 'academic' %}" class="nav-link text-uppercase">academic</a></li>
+      <li class="nav-item"><a href="{% url 'admission' %}" class="nav-link text-uppercase">admission</a></li>
+      <li class="nav-item"><a href="#programme" class="nav-link text-uppercase">programme</a></li>
+      <li class="nav-item"><a href="#contactUs" class="nav-link text-uppercase">Contact us</a></li>
+    </ul>
+  </div>
+</nav> 
+<div class="container text-center mt-4">
+  <i class="fas fa-book-open text-danger fa-10x"></i>
+</div>
+<div class="container-fluid jumbotron mt-2">
+  <div class="container text-center">
+    <h2>Kalam school</h2>
+    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam eveniet, ipsum ducimus dolor totam necessitatibus. Sapiente similique ad repellendus exercitationem vitae tenetur non adipisci deserunt. Fugiat vero tenetur voluptatibus esse! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi pariatur tempora corrupti quas, voluptates, ad possimus dolore accusantium, explicabo dignissimos enim corporis odio aperiam eos vero dolorem numquam ratione perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias sunt ratione quidem doloremque eaque dolor numquam ullam nesciunt assumenda dolorem, voluptatibus voluptas! Obcaecati doloribus sunt quidem vero consectetur neque.</p>
+  </div>
+</div>
+<div class="container" id="programme">
+  <h2 class="border-bottom border-danger text-danger">Programme</h2>
+  <div class="row text-center mt-3">
+    <div class="col-sm-4 " class="programme-link">
+      <i class="fas fa-hands fa-8x text-danger mb-4"></i>
+      <br>
+      <a href="{% url 'pre-primary' %}" class="text-dnager text-uppercase h4" >pre-primarry school</a>
+      <p class="text-justify mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, eligendi. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <div class="col-sm-4 " class="programme-link">
+      <i class="fas fa-pencil-alt fa-8x text-danger mb-4"></i>
+      <br>
+      <a href="{% url 'primary' %}" class="text-uppercase h4" >primarry school</a>
+      <p class="text-justify mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, eligendi. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <div class="col-sm-4 " class="programme-link">
+      <i class="fas fa-pencil-ruler fa-8x text-danger mb-4"></i>
+      <br>
+      <a href="{% url 'middile' %}" class="text-dnager text-uppercase h4" >middile school</a>
+      <p class="text-justify mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, eligendi. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-sm-6" class="programme-link">
+      <i class="fas fa-search fa-8x text-danger mb-4"></i>
+      <br>
+      <a href="{% url 'heigher' %}" class="text-dnager text-uppercase h4" >heigh school</a>
+      <p class="text-justify mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, eligendi. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+    <div class="col-sm-6" class="programme-link">
+      <i class="fas fa-microscope fa-8x text-danger mb-4"></i>
+      <br>
+      <a href="{% url 'heighersecondary' %}" class="text-dnager text-uppercase h4" >secondary school</a>
+      <p class="text-justify mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, eligendi. Lorem ipsum dolor sit amet.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="cotainer-fluid jumbotron mb-3" id="contactUs">
+  <div class="container">
+    <h2 class="text-center border-bottom border-danger text-uppercase text-danger font-weight-bold">Contact us</h2>
+    <div class="row mt-5">
+      <div class="col-md-6 ">
+        <input type="text" name="name" id="name" class="form-control" placeholder="your name"><br>
+        <input type="email" name="email" id="email" class="form-control" placeholder="your email"><br>
+        <input type="text" name="subject" id="subject" class="form-control" placeholder="subject"><br>
+        <textarea name="massage" id="" cols="20" class="form-control" rows="5"></textarea><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="col-sm-4 offset-sm-2">
+        <b class="text-uppercase">Headquater:</b><br>
+        Indian Institute of Technology Madras <br>
+        IIT P.O., Chennai 600 036 <br>
+        INDIA <br>
+        mob: 009994944
+        <br>
+        <br>
+        <b class="text-uppercase">Headquater:</b><br>
+        Indian Institute of Technology Madras <br>
+        IIT P.O., Chennai 600 036 <br>
+        INDIA <br>
+        mob: 009994944
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+{% endblock contant%}
